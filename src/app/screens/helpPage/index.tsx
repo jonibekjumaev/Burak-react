@@ -22,6 +22,11 @@ export default function HelpPage() {
     setValue(newValue);
   };
 
+  const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  e.target.style.height = "auto";           /* avval reset qilinadi */
+  e.target.style.height = e.target.scrollHeight + "px"; /* keyin content balandligiga teng qilinadi */
+};
+
   return (
     <div className={"help-page"}>
       <Container className={"help-container"}>
@@ -102,9 +107,17 @@ export default function HelpPage() {
                       <div className={"admin-input-box"}>
                         <label>Message</label>
                         <textarea
-                          name={"memberMsg"}
-                          placeholder={"Your message"}
-                        ></textarea>
+                            name={"memberMsg"}
+                            placeholder={"Your message"}
+                            onChange={handleTextareaChange}
+                            style={{
+                              resize: "none",
+                              overflow: "hidden",
+                              minHeight: "100px",
+                              maxHeight: "400px",
+                              width: "100%",
+                            }}
+                          ></textarea>
                       </div>
                       <Box
                         display={"flex"}
