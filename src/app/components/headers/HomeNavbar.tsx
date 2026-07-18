@@ -16,7 +16,8 @@ export default function HomeNavbar() {
     console.log("componentWillUnmount");
   };
 
-  }, [ value] ) // Array ichidagi => componentDidUpdate() ga teng
+  }, [ value] ) // Dependency Array => value o‘zgarganda ishlaydi.
+                // Agar berilmasa 1 marta ishlaydi
 
 
 
