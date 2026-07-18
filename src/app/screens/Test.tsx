@@ -21,15 +21,15 @@ class Test extends Component {
     });
   };
 
-  componentDidMount() {
-    console.log("componentDidMount");
+  componentDidMount () {
+    console.log(" componentDidMount");
     // runs after first render => RETRIEVE DATA FROM BACKEND SERVER
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     console.log("componentWillUnmount");
     // runs before component unmount
-  }
+  } 
 
   componentDidUpdate() {}
 
