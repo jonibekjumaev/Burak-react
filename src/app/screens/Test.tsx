@@ -50,3 +50,32 @@ class Test extends Component {
 }
 
 export default Test;
+
+/**
+
+ Reactni 3 xil lifecycle methodlari bor:                               lifecycle or phases  
+      1. componentDidMount -- sahifa ishga tushganda ishlaydi. RETRIEVE from backend. birinchi backend dan malumotlarimizni olib kelish uchun va uni frontendda foydalaniladi
+      2. componentDidUpdate -- sahifada update bulganda ishga tushadi, shu payti virtual dom real domni rebuild qilib oladi
+      3.componentWillUnmount -- vazifasi tugashidan oldin ishga tushadi, boshqa sahifaga utganda yakunlanadi, 
+
+
+//  hook lar orqali react class ichidagai state va methodlarni suniy react function ichida qurib olsa bular ekan.
+Hook (ilgak) bu qarmoqga uxshash ilgak ekan reactda biron uzgarish bulsa signal borar ekan va methodlar ishga tushadi 
+
+
+  useState hook -- bu react function ichida suniy state hosil qilib beradi.
+
+
+  useEffect -- bu lifecycle ning 3 xil phase ni tashkil qilib beradigan hook hisoblanadi
+
+
+ */
+
+
+  /**
+      Redux architectore  
+
+
+
+
+   */
