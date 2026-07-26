@@ -74,7 +74,9 @@ export default function HomePage() {
    setPopularDishes(result);
   }, [])
 
-  console.log("popularDishes", popularDishes);
+  // console.log("popularDishes", popularDishes);
+  console.log(process.env.REACT_APP_API_URL);
+
   
 
 
