@@ -1,6 +1,8 @@
 import { createSelector } from "@reduxjs/toolkit";
 import { AppRootState } from "../../../lib/types/screen";
 
+
+//butun Redux store'dan faqat productsPage qismini ajratib oladi.
 const selectProductsPage = (state: AppRootState) => state.productsPage;
 
 export const retrieveRestaurant = createSelector(
