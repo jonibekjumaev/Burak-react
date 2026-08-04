@@ -9,16 +9,18 @@ import OtherNavbar from "./components/headers/OtherNavbar";
 import Footer from "./components/footer";
 import AuthenticationModel from "./components/auth/index";
 import HelpPage from "./screens/helpPage";
-import "../css/app.css";
-import "../css/navbar.css";
-import "../css/footer.css";
-import Test from "./screens/Test";
 import useBasket from "./hooks/useBasket";
 import { T } from "../lib/types/common";
 import { sweetErrorHandling, sweetTopSuccessAlert } from "../lib/sweetAlert";
 import { Messages } from "../lib/config";
 import { useGlobals } from "./hooks/useGlobals";
 import MemberService from "./services/MemberService";
+import "../css/app.css";
+import "../css/navbar.css";
+import "../css/footer.css";
+
+
+
 
 function App() {
 const location = useLocation();

@@ -3,7 +3,7 @@ import { CartItem } from "../../lib/types/search";
 
 
 const useBasket = () => {
-    const cartJson: string | null = localStorage.getItem("cardData");
+    const cartJson: string | null = localStorage.getItem("cartData");
     const currentCart = cartJson ? JSON.parse(cartJson) : [];
     const [cartItems, setCartItems] = useState<CartItem[]>(currentCart);
 
