@@ -7,6 +7,8 @@ import { retrieveFinishedOrders } from "./selector";
 import { serverApi } from "../../../lib/config";
 import { Order, OrderItem } from "../../../lib/types/order";
 import { Product } from "../../../lib/types/product";
+import { T } from "../../../lib/types/common";
+import { sweetErrorHandling } from "../../../lib/sweetAlert";
 
 /** REDUX  SELECTOR */
 
@@ -17,8 +19,8 @@ const finishedOrdersRetriever = createSelector(
 
 
 
-
 export default function FinishedOrders() {
+
   const {finishedOrders} = useSelector(finishedOrdersRetriever);
 
 

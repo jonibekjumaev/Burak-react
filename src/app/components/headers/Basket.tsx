@@ -32,7 +32,7 @@ export default function Basket(props: BasketProps ) {
           onDelete,
           onDeleteAll
   } =props;
-  const {authMember} = useGlobals();
+  const {authMember, setOrderBuilder} = useGlobals();
   const history = useHistory();
   const itemsPrice = cartItems.reduce((a: number, c: CartItem) => a + c.price * c.quantity, 0 );
   const shippingCost: number = itemsPrice < 100 ? 5 : 0;
@@ -61,6 +61,7 @@ export default function Basket(props: BasketProps ) {
       onDeleteAll();
 
       // REFRESH VIA CONTEXT
+      setOrderBuilder(new Date());
       history.push("/orders")
     } catch (err) {
       console.log(err);
