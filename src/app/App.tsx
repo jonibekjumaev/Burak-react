@@ -58,7 +58,8 @@ const handleLogoutRequest = async () => {
   
   return (
     <>
-      {location.pathname === "/" ? <HomeNavbar 
+      {location.pathname === "/" 
+      ? <HomeNavbar 
       cartItems = {cartItems} 
       onAdd={onAdd} 
       onRemove={onRemove} 
